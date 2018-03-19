@@ -17,7 +17,7 @@ public class Main {
         System.out.println("STARTING");
         // Note: It is important to register your ReadyListener before building
         JDA jda = new JDABuilder(AccountType.BOT)
-                .setToken("$TOKEN")
+                .setToken(ID.TOKEN)
                 .setStatus(OnlineStatus.DO_NOT_DISTURB)
                 .setGame(Game.playing("Laden..."))
                 .buildAsync();

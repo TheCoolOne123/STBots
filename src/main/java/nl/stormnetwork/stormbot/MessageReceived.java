@@ -31,6 +31,12 @@ public class MessageReceived extends ListenerAdapter {
 
                     if (m.getContentRaw().startsWith("!forum")) {
                         c.sendMessage("https://forum.plopgroep.ga").queue();
+                    if (m.getContentRaw().startsWith("!help")){
+                        c.sendMessage("**COMMANDS**").queue();
+                        c.sendMessage("**!**forum").queue();
+                        c.sendMessage("**!**help").queue();
+
+                    }
 
                     }
 
