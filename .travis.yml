@@ -1,0 +1,20 @@
+language: java
+java: 8
+sudo: enabled
+before-script:
+  mvn clean package
+after_success:
+  - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh success $WEBHOOK_URL
+after_failure:
+  - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh failure $WEBHOOK_URL
+deploy:
+  provider: heroku
+  api_key:
+    secure: 85a8e357-a482-4a59-80b6-894a1b45b5f2
+  app: clo1
+  on:
+    repo: TheCoolOne123/STBot
