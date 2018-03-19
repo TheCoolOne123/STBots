@@ -2,13 +2,13 @@ package nl.stormnetwork.stormbot;
 
 public class ID {
 
-    public static final String ServerID = "413689336098324485";
+    public static final String ServerID = "425388390641434645";
 
 
-    public static final String ChannelID = "415915639664934923";
+    public static final String ChannelID = "425408629261336586";
 
 
-    public static final String BotChannelID = "416637391714123796";
+    public static final String IdeenChannelID = "425410384816635924";
 
 
 
@@ -82,5 +82,5 @@ public class ID {
 
 
 
-    public static final String TOKEN = "NDI1MzgyMTA0MjE4NzMwNDk2.DZG7CQ.fcJhUgyO9PlqoXlZLNBeY3ZwG2w";
+    public static final String TOKEN = "MUST BE A SECRET";
 }
