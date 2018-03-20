@@ -82,5 +82,5 @@ public class ID {
 
 
 
-    public static final String TOKEN = "N----";
+    public static final String TOKEN = "";
 }

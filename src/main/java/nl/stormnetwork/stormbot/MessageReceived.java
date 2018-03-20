@@ -1,12 +1,16 @@
 package nl.stormnetwork.stormbot;
 
 
+import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
+import java.awt.*;
+
 public class MessageReceived extends ListenerAdapter {
+    //EmbedBuilder eb = EmbedBuilder.getDescriptionBuilder();
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
@@ -39,14 +43,23 @@ public class MessageReceived extends ListenerAdapter {
 
                 } else if (M.getContentRaw().startsWith("!ip")) {
                     m.sendMessage(":large_blue_circle: Jordy speelt momenteel op het volgende **IP:** play.stormnetwork.nl :large_blue_circle:").queue();
-                }
+                } //else if (M.getContentRaw().startsWith("!herhaal")) {
+                //
+                //        eb.setAuthor(M.getAuthor().getAvatarId());
+                //          eb.setColor(Color.RED);
+                //            eb.setTitle("Hrhaal");
+                //              eb.build();
 
 
             }
 
         }
+
+
     }
 
-
 }
+
+
+
 
